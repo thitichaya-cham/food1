@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/tp2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/tp3" />
+
+
+        <TextView
+            android:id="@+id/no1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text=" Frist Name "
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:typeface="normal"
+            app:fontFamily="@font/regular" />
+
+        <EditText
+            android:id="@+id/e1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/no1"
+            android:layout_alignLeft="@id/no1"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            android:ems="10"
+            android:hint="  "
+            android:inputType="text"
+            android:background="@drawable/edit_text"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:fontFamily="@font/regular" />
+
+        <TextView
+            android:id="@+id/no2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/e1"
+            android:layout_alignLeft="@+id/e1"
+            android:layout_marginTop="10dp"
+            android:text=" Lastname "
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:typeface="normal"
+            app:fontFamily="@font/regular" />
+
+        <EditText
+            android:id="@+id/e2"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/no2"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            android:layout_alignLeft="@id/no2"
+            android:ems="10"
+            android:hint="   "
+            android:textSize="20dp"
+            android:background="@drawable/edit_text"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:inputType="text"
+            app:fontFamily="@font/regular"  />
+
+        <TextView
+            android:id="@+id/no3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/e2"
+            android:layout_alignLeft="@+id/e2"
+            android:layout_marginTop="10dp"
+            android:text=" Phone "
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:typeface="normal"
+            app:fontFamily="@font/regular" />
+
+        <EditText
+            android:id="@+id/e3"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/no3"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            android:layout_alignLeft="@id/no3"
+            android:ems="10"
+            android:hint="   "
+            android:textSize="20dp"
+            android:background="@drawable/edit_text"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:inputType="phone"
+            app:fontFamily="@font/regular"  />
+
+        <TextView
+            android:id="@+id/no4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/e3"
+            android:layout_alignLeft="@+id/e3"
+            android:layout_marginTop="10dp"
+            android:text=" Email "
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:typeface="normal"
+            app:fontFamily="@font/regular" />
+
+        <EditText
+            android:id="@+id/e4"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/no4"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            android:layout_alignLeft="@id/no4"
+            android:ems="10"
+            android:hint="   "
+            android:textSize="20dp"
+            android:background="@drawable/edit_text"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:inputType="textEmailAddress"
+            app:fontFamily="@font/regular"  />
+
+
+        <TextView
+            android:id="@+id/no5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/e4"
+            android:layout_alignLeft="@+id/e4"
+            android:layout_marginTop="10dp"
+            android:text=" Password "
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:typeface="normal"
+            app:fontFamily="@font/regular" />
+
+        <EditText
+            android:id="@+id/e5"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/no5"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            android:layout_alignLeft="@id/no5"
+            android:ems="10"
+            android:hint="   "
+            android:textSize="20dp"
+            android:background="@drawable/edit_text"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:inputType="textPassword"
+            app:fontFamily="@font/regular"  />
+
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/e5"
+            android:layout_marginBottom="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_circle7"
+            android:text=" Sing Up "
+            android:textColor="#000000"
+            android:textSize="25dp"
+            app:fontFamily="@font/regular" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

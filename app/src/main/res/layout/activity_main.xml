@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/tp2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/tp3" />
+
+
+        <TextView
+            android:id="@+id/tel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/imageView3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="   "
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:typeface="normal"
+            app:fontFamily="@font/regular" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tel"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="0dp"
+            android:drawableLeft="@drawable/ed1"
+            android:ems="10"
+            android:hint="  Username : "
+            android:paddingLeft="20dp"
+            android:drawablePadding="10dp"
+            android:inputType="text"
+            android:background="@drawable/edit_text"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:fontFamily="@font/regular" />
+
+        <TextView
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/phone"
+            android:layout_alignLeft="@+id/tel"
+            android:layout_marginTop="5dp"
+            android:text="   "
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:typeface="normal"
+            app:fontFamily="@font/regular" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/pass"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ed2"
+            android:ems="10"
+            android:hint="  Password :   "
+            android:drawablePadding="10dp"
+            android:paddingLeft="20dp"
+            android:textSize="20dp"
+
+            android:background="@drawable/edit_text"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:inputType="textPassword"
+            app:fontFamily="@font/regular"  />
+
+        <ImageView
+            android:id="@+id/imgemail"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/gmail" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="165dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/imgemail"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:text="   "
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btnlog"
+            android:textSize="22dp"
+            app:fontFamily="@font/regular" />
+
+        <TextView
+            android:id="@+id/txtwar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login"
+            android:layout_marginTop="25dp"
+            android:layout_alignLeft="@+id/password"
+            android:gravity="center"
+            android:text="  You don have an account  "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            app:fontFamily="@font/regular" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtwar"
+            android:layout_toRightOf="@+id/txtwar"
+            android:text=" Sing Up "
+            android:textColor="#00008B"
+            android:textSize="20dp"
+            app:fontFamily="@font/regular" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

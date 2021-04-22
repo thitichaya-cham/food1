@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <!-- Header  -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" List Food "
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            app:fontFamily="@font/regular"
+            tools:ignore="MissingConstraints" />
+
+
+    </RelativeLayout>
+
+    <!-- Footer  -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/btnnext1"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic1"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/btnnext2"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic2"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/btnnext3"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic3"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/btnnext4"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic4"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+    <!-- Content -->
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header"
+        android:background="#DCDCDC">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"  >
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginLeft="15dp"
+                android:text=" รายการที่บันทึกไว้ "
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                app:fontFamily="@font/regular"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/imgdelete"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_toRightOf="@+id/title2"
+                android:layout_alignTop="@+id/title2"
+                android:layout_marginLeft="-150dp"
+                android:layout_marginTop="-10dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/icdelete" />
+
+            <ListView
+                android:id="@+id/list1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/title2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

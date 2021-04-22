@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgset">
+
+    <!-- Header  -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/icedit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/icedit" />
+
+        <ImageView
+            android:id="@+id/imgprofile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/icedit"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/icprofile" />
+
+        <ImageView
+            android:id="@+id/icedit2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="-40dp"
+            android:layout_below="@+id/imgprofile"
+            android:layout_toRightOf="@+id/imgprofile"
+
+
+            app:srcCompat="@drawable/icedit" />
+
+    </RelativeLayout>
+
+    <!-- Footer  -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/btnnext1"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic1"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/btnnext2"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic2"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/btnnext3"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic3"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/btnnext4"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic4"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+    <!-- Content -->
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header"
+        android:background="@drawable/bg" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"  >
+
+            <ImageView
+                android:id="@+id/imgset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/imgset" />
+
+            <TextView
+                android:id="@+id/no1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="115dp"
+                android:text=" Frist Name "
+                android:textColor="#000000"
+                android:textSize="22dp"
+                app:fontFamily="@font/regular" />
+
+            <TextView
+                android:id="@+id/no2"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/no1"
+                android:layout_alignLeft="@+id/no1"
+                android:layout_marginTop="15dp"
+                android:text=" Frist Name "
+                android:textColor="#000000"
+                android:textSize="22dp"
+                app:fontFamily="@font/regular" />
+
+            <TextView
+                android:id="@+id/no3"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/no2"
+                android:layout_alignLeft="@+id/no1"
+                android:layout_marginTop="15dp"
+                android:text=" Frist Name "
+                android:textColor="#000000"
+                android:textSize="22dp"
+                app:fontFamily="@font/regular" />
+
+            <TextView
+                android:id="@+id/no4"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/no3"
+                android:layout_alignLeft="@+id/no1"
+                android:layout_marginTop="17dp"
+                android:text=" Frist Name "
+                android:textColor="#000000"
+                android:textSize="22dp"
+                app:fontFamily="@font/regular" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
